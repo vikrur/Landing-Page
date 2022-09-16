@@ -48,30 +48,26 @@ img {
 #header {
   display: flex;
   position: fixed;
-  width: 600px;
   width: 100%;
   top: 0;
-  z-index: 100;
-  flex-wrap: wrap;
   align-items: center;
-  text-align: center;
   background-color: rgb(73, 167, 176);
-  z-index: 100;
   border-radius: 20px;
 }
 
-.logo {
-  flex: 1 30px;
+.header-container {
+  display: flex;
+  width: 100%;
 }
-.header-img {
-  height: 100%;
-  max-width: 80px;
+
+#logo {
+  flex: 1;
 }
 
 #nav-bar {
-  max-width: 520px;
-  flex: 3 300px;
-  margin-right: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
 }
 
 #main {
