@@ -8,11 +8,6 @@
     rgb(182, 244, 146),
     rgb(51, 139, 147)
   );
-  --gradient-reverse-color: linear-gradient(
-    to right,
-    rgb(51, 139, 147),
-    rgb(182, 244, 146)
-  );
 }
 
 @media (min-width: 600px) {
@@ -28,7 +23,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.container-body {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -36,6 +31,11 @@
   padding: 15px 15px;
   background: var(--gradient-color);
   border-radius: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
 }
 
 img {
@@ -51,7 +51,7 @@ img {
   width: 100%;
   top: 0;
   align-items: center;
-  background-color: rgb(73, 167, 176);
+  background: var(--gradient-color);
   border-radius: 20px;
 }
 
